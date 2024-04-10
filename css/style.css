@@ -10,11 +10,13 @@
     src: url('../fonts/NewRocker-Regular.otf');
 
 }
+
 @font-face {
     font-family: mifuente1;
     src: url('../fonts/DancingScript-Regular.ttf');
 
 }
+
 @font-face {
     font-family: mifuenteA;
     src: url('../fonts/DancingScript-Bold.ttf');
@@ -41,166 +43,12 @@
     src: url('../fonts/Rockchild\ California.ttf');
 }
 
-
 body {
     background: linear-gradient(to bottom, black, #1f0303, #000000);
     /* Agrega más colores según sea necesario para el degradado */
     /* Añade relleno según sea necesario para tus contenidos */
     /* Ajusta el color del texto según sea necesario para la legibilidad */
 }
-
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-#entry {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-
-#entry figure {
-    width: 62%;
-}
-
-#entry img {
-    width: 100%;
-}
-#menu-principal{
-    margin-bottom: 7rem;
-}
-
-#menu-principal ul {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 1.5em;
-    width: 100%;
-    background: linear-gradient(to top, #000000, #130303, #1f0303);
-    z-index: 2;
-}
-
-
-
-
-#menu-principal li {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 12%;
-    margin: 1%;
-    list-style: none;
-    border-radius: 1em;
-    border: 0.1em rgb(158, 157, 157) solid;
-    transition: background-color 0.8s;
-}
-
-
-
-#menu-principal li:hover {
-    background: #f4c653;
-    box-shadow: 0 0 10px rgba(143, 143, 143, 0.603);
-}
-
-#menu-principal a:hover {
-    color: black;
-}
-
-
-#menu-principal a {
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    color: whitesmoke;
-    padding: 4%;
-    font-size: 1.3rem;
-    font-family: mifuente;
-
-
-}
-
-#inicio main article {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#inicio main article figure {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-#inicio main article figure img {
-    width: 110%;
-}
-
-#inicio p {
-    margin: 0 auto;
-    color: antiquewhite;
-    padding: 0.5em;
-    font-size: 2rem;
-    width: 90%;
-    font-family: mifuente1;
-}
-
-video {
-    margin-top: 2em;
-    width: 90%;
-    border-radius: 2em;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    height: 10vh;
-
-}
-
-footer #menu-footer {
-    width: 100%;
-}
-
-footer #menu-footer ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-footer li {
-    list-style-type: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 1rem;
-
-}
-
-
-footer a {
-
-    color: rgb(102, 1, 1);
-    padding: 2%;
-    text-decoration: none;
-}
-
-
-#menu-footer svg:hover {
-    color: #fac43d !important;
-}
-
 
 /*------------ CSS HISTORIA---------------------*/
 
@@ -229,7 +77,8 @@ footer a {
     width: 90%;
     font-size: 1.5rem;
 }
-.carousel p{
+
+.carousel p {
     margin: 0.5em;
     color: antiquewhite;
     padding: 0.5em;
@@ -237,229 +86,447 @@ footer a {
     width: 90%;
 }
 
+/*-------------css responisve------------------*/
 
-/*------------ CSS discografia---------------------*/
+/*------------css inicio-----------------------*/
 
-#section-disco {
-    display: flex;
-    flex-wrap: wrap;
-    background: linear-gradient(to bottom, black, #161414, #000000, #141212, #000000);
-    ;
-}
+@media all and (max-width: 768px) {
 
-@keyframes cambiaColor {
-    0% {
+    /*--- CSS PARA TODOS LOS MENUS RESPONISVE----*/
+    #contenedor-menu section {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 1em;
+    }
+
+    #contenedor-menu img {
+        width: 12vw;
+
+    }
+
+    #contenedor-menu #cerrar {
+        display: none;
+    }
+
+    #contenedor-menu #contenedor-enlaces {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, height 1s ease 0.7s;
+    }
+
+    #contenedor-menu:target #abrir {
+        display: none;
+    }
+
+    #contenedor-menu:target #cerrar {
+        display: block;
+    }
+
+    #contenedor-menu:target #contenedor-enlaces {
+        opacity: 1;
+        height: 80vh;
+        transition: opacity 0.2s ease, height 1s ease;
+    }
+
+    #contenedor-enlaces {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url('../img/fondomenu2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #contenedor-enlaces li {
+        border-radius: 0.5em;
+        border: 0.2em rgb(158, 157, 157) solid;
+        transition: background-color 0.5s;
+        width: 90%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #contenedor-enlaces a {
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
         color: rgb(255, 255, 255);
+        padding: 4%;
+        font-size: 1.3rem;
+        font-family: mifuente;
+
     }
 
-    50% {
-        color: #f70202;
+    #contenedor-enlaces li:hover {
+        background: #000000dc;
+        /* background: #f4c653;  color amarillo que tenia el anitguo menu*/
+        box-shadow: 0 0 12px rgba(167, 167, 167, 0.603);
     }
 
-    100% {
-        color: rgb(255, 255, 255);
-    }
-}
+    /*--------CSS DEL INICIO RESPOSIVE--------------*/
+    #entry {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
-h1 {
-    animation: cambiaColor 5s infinite ;
-    text-shadow: 0 0 10px rgb(126, 126, 126);
-    font-family: mifuente;
-    padding: 0.8rem;
-}
-
-h2 {
-    color: aliceblue;
-    font-family: mifuente;
-    padding: 0.8rem;
-
-}
-
-.articulo-disco {
-    width: 45%;
-    padding: 1.5em;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 1em;
-    border: double black 0.1em;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-#disco1 {
-    background-image: url('../img/apetite.jpg');
-
-}
-
-#disco2 {
-    background-image: url('../img/lies.webp');
-
-}
-
-#disco3 {
-    background-image: url('../img/use2.avif');
-}
-
-#disco4 {
-
-    background-image: url('../img/fondo2.webp');
-}
-
-#disco5 {
-    background-image: url('../img/spagheti.webp');
-}
-
-#disco6 {
-    background-image: url('../img/chinase.webp');
-}
-
-/*------------ CSS tienda---------------------*/
-#mainTienda
-{
-    background-color: #000000;
-}
-@keyframes cambiaColor2 {
-    0% {
-        color: rgb(255, 255, 255);
     }
 
-    50% {
-        color:#ec7777
+    #entry figure {
+        width: 80%;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 
-    100% {
-        color: rgb(255, 255, 255);
+    #entry img {
+        width: 100%;
+    }
+
+    #inicio main article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #inicio main article figure {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #inicio main article figure img {
+        width: 95%;
+        border-radius: 0.5em;
+    }
+
+    #inicio p {
+        margin: 0 auto;
+        color: antiquewhite;
+        padding: 0.5em;
+        font-size: 1.3rem;
+        width: 90%;
+        font-family: mifuente;
+    }
+
+    /*----------CSS PARA TODOS LOS FOOTER RESPOSIVE----------*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 14vh;
+        color: #ffffff;
+        padding: 1.2em;
+
+    }
+
+    #menu-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #menu-footer ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0% !important;
+        margin: 0% !important;
+    }
+
+    #menu-footer li {
+        list-style-type: none;
+
+
+    }
+
+    #menu-footer a {
+
+        color: rgb(102, 1, 1);
+        padding: 2%;
+        text-decoration: none;
+    }
+
+
+    #menu-footer svg:hover {
+        color: #fac43d !important;
+
+    }
+
+
+    /*--------------------------CSS RESPOSIVE DISCOGRAFIA-------------------*/
+
+
+
+    #section-disco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, black, #1f0303, #000000);
+        ;
+    }
+
+    @keyframes cambiaColor {
+        0% {
+            color: rgb(255, 255, 255);
+        }
+
+        50% {
+            color: #f70202;
+        }
+
+        100% {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    h1 {
+        animation: cambiaColor 5s infinite;
+        text-shadow: 0 0 10px rgb(219, 219, 219);
+        font-family: mifuente;
+        padding: 0.8rem;
+        font-size: 2rem;
+    }
+
+    h2 {
+        color: aliceblue;
+        font-family: mifuente;
+        padding: 0.8rem;
+
+    }
+
+    .articulo-disco {
+        width: 90%;
+        padding: 1.5em;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 1em;
+        border: solid rgb(255, 255, 255) 0.15em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    #disco1 {
+        background-image: url('../img/apetite.jpg');
+
+    }
+
+    #disco2 {
+        background-image: url('../img/lies.webp');
+
+    }
+
+    #disco3 {
+        background-image: url('../img/use2.avif');
+    }
+
+    #disco4 {
+
+        background-image: url('../img/fondo2.webp');
+    }
+
+    #disco5 {
+        background-image: url('../img/spagheti.webp');
+    }
+
+    #disco6 {
+        background-image: url('../img/chinase.webp');
+    }
+
+
+
+
+    /*---------------------CSS TIENDA RESPONSIVE-------------------------*/
+
+    .body1{
+        background-color: #000000 !important;
+        z-index: 1;
+    }
+    #mainTienda {
+        background: linear-gradient(to bottom, black, #24495a,black,#2a5c74,black);
+    }
+
+    @keyframes cambiaColor2 {
+        0% {
+            color: rgb(255, 255, 255);
+        }
+
+        50% {
+            color: #5a58da
+        }
+
+        100% {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    #mainTienda h1 {
+        animation: cambiaColor2 3s infinite;
+        text-shadow: 0 0 10px rgb(24, 106, 112);
+        font-family: mifuente3;
+        padding: 0.1em;
+        font-size: 7em;
+    }
+
+    #sectionTienda {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .enlaceRemera {
+        display: inline-block;
+        width: 80%;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', sans-serif;
+        color: #ffffff;
+    }
+
+    #sectionTienda article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.1rem;
+        align-items: center;
+        border: #fcfcfc 0.1em solid;
+        border-radius: 0.5em;
+        background-color: #000000;
+        transition: transform 0.4s ease;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        background: linear-gradient(to bottom, black, #0b1e27, #000000);
+    }
+
+    #sectionTienda article:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
+    }
+
+    #sectionTienda figure {
+        width: 100%;
+    }
+
+    #sectionTienda figure img {
+        width: 100%;
+    }
+
+    /*-------------- css articulos-----------------*/
+
+    .articulo1 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+
+    }
+
+    .articulo1 figure {
+        width: 40%;
+    }
+
+    .articulo1 img {
+        width: 100%;
+    }
+
+    .articulo1 img:hover {
+        transform: scale(1.2);
+        transition: transform 0.4s ease;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 40%;
+
+
+    }
+
+    .articulo1 p {
+        font-size: 1.5em;
+        color: #ffffff;
+
+
+    }
+
+    .sectionventa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2em;
+        margin-bottom: 6em;
+    }
+
+    .sectionventa h2 {
+        font-family: mifuente2;
+    }
+
+    .sectionventa a {
+        display: inline-block;
+        width: 30%;
+        /* Establecer el ancho deseado */
+        text-decoration: none;
+        /* Eliminar subrayado predeterminado */
+    }
+
+    .articulo2 {
+        width: 100%;
+        /* Cambiar a 100% para ocupar todo el ancho de su contenedor */
+        border: #999999 solid 0.1em;
+        border-radius: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.8em;
+        background: linear-gradient(to bottom, black, #160909, #000000);
+        font-size: 1em;
+        color: #ffffff;
+        font-family: 'Franklin Gothic Medium', sans-serif;
+        transition: transform 0.4s ease;
+    }
+
+    .articulo2 figure {
+        width: 80%;
+    }
+
+    .articulo2 img {
+        width: 100%;
+    }
+
+    .articulo2:hover {
+        transform: scale(1.05);
+        transition: transform 0.4s ease;
+        box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+
+
+
+
     }
 }
-#mainTienda h1{
-    animation: cambiaColor2 3s infinite;
-    text-shadow: 0 0 10px rgb(126, 126, 126);
-    font-family: mifuente3;
-    padding: 0.1em;
-    font-size: 7em;
-}
-#sectionTienda {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.enlaceRemera {
-    display: inline-block;
-    width: 28%;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    color: #ffffff;
-}
-
-#sectionTienda article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1.1rem;
-    align-items: center;
-    border: #fcfcfc 0.1em solid;
-    border-radius: 0.5em;
-    background-color: #000000;
-    transition: transform 0.4s ease; 
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background: linear-gradient(to bottom, black, #277da5, #000000);
-}
-
-#sectionTienda article:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
-}
-
-#sectionTienda figure{
-    width: 100%;
-}
-#sectionTienda figure img{
-    width: 100%;
-}
-
-/*-------------- css articulos-----------------*/
-
-.articulo1{
-   display: flex;
-   flex-direction: row-reverse;
-   justify-content: space-evenly;
-   
-}
-.articulo1 figure{
-    width: 40%;
-}
-.articulo1 img{
-    width: 100%;
-}
-.articulo1 img:hover {
-    transform: scale(1.2);
-    transition: transform 0.4s ease;
-}
-.texto{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 40%;
-
-
-}
-
-.articulo1 p{
-    font-size: 1.5em;
-    color: #ffffff;
-    
-
-}
-.sectionventa {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2em;
-    margin-bottom: 6em;
-}
-
-.sectionventa h2 {
-    font-family: mifuente2;
-}
-
-.sectionventa a {
-    display: inline-block; 
-    width: 30%; /* Establecer el ancho deseado */
-    text-decoration: none; /* Eliminar subrayado predeterminado */
-}
-
-.articulo2 {
-    width: 100%; /* Cambiar a 100% para ocupar todo el ancho de su contenedor */
-    border: #999999 solid 0.1em;
-    border-radius: 0.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0.8em;
-    background: linear-gradient(to bottom, black, #160909, #000000);
-    font-size: 1em;
-    color: #ffffff;
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    transition: transform 0.4s ease; 
-}
-
-.articulo2 figure {
-    width: 80%; 
-}
-
-.articulo2 img {
-    width: 100%;
-}
-
-.articulo2:hover {
-    transform: scale(1.05);
-    transition: transform 0.4s ease;
-    box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
-}
-
