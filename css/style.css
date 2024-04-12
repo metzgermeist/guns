@@ -730,7 +730,7 @@ body {
     }
 
     form {
-        width: 95%;
+        width: 97%;
         margin: 0 auto;
         border-radius: 0.8em;
         background: linear-gradient(to bottom right, #690000, #000000);
@@ -748,7 +748,7 @@ body {
             box-shadow: 0 0 0 0.1em #ac3802; /* Color inicial del borde */
         }
         50% {
-            box-shadow: 0 0 0 0.1em rgb(109, 0, 0); /* Color intermedio del borde */
+            box-shadow: 0 0 0 0.1em rgb(255, 255, 255); /* Color intermedio del borde */
         }
         100% {
             box-shadow: 0 0 0 0.1em #ac3802; /* Color final del borde */
@@ -777,7 +777,7 @@ body {
 
     input {
         border-radius: 0.8em;
-        width: 90%;
+        width: 95%;
         padding: 0.5em;
         margin-bottom: 1.2em;
         font-family: mifuente;
@@ -814,7 +814,7 @@ body {
       }
       
       .button1:hover {
-        box-shadow: 0 0.425em #631f00;
+        box-shadow: 0 0.425em #ffffff;
         transform: translateY(+0.1875em); /* Equivalente a -3px */
       }
 
