@@ -556,27 +556,26 @@ body {
         box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
     }
 
-    /*.animacion {
-        width: 8em;
-        height: 8em;
-        background-image: url('../img/klipartz.com.png');
-        background-size: cover;
-        border-radius: 50%;
-        animation: girar 5s linear infinite;
-        transition: transform 0.1s ease;
-        transform-style: preserve-3d;
-        perspective: 10em; 
-    }
-    
-    @keyframes girar {
-        0% { transform: rotateY(0deg); }
-        100% { transform: rotateY(360deg); }
-    }
-    
-    .animacion:hover {
-        animation-play-state: paused;
-        transform: rotateY(0deg); 
-    }*/
+    .button {
+        background-color: #410000; 
+        color: white;
+        border: none;
+        border-radius: 0.3125em; 
+        padding: 0.625em 1.5em; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        box-shadow: 0 0.3125em #fff0f0;
+        font-family: mifuente;
+        margin-bottom: 1.5em;
+        
+      }
+      
+      .button:hover {
+        transform: scale(0.9);
+      }
 
 
     /*----------------CSS WORLD TOUR RESPONSIVE-------------*/
@@ -723,6 +722,108 @@ body {
     .section-world4 img {
         width: 100%;
         border-radius: 1em;
+    }
+
+    /*--------------CSS FORMULARIO---------------*/
+    #main-formulario {
+        padding: 1.5em;
+    }
+
+    form {
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 0.8em;
+        background: linear-gradient(to bottom right, #690000, #000000);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        animation: cambiaColor 5s infinite; /* Aplicamos la animación al formulario */
+        box-shadow: 0 0 0 2px #ac3802; /* Establecemos una sombra inicial para simular el borde */
+    }
+    
+    @keyframes cambiaColor {
+        0% {
+            box-shadow: 0 0 0 0.1em #ac3802; /* Color inicial del borde */
+        }
+        50% {
+            box-shadow: 0 0 0 0.1em rgb(109, 0, 0); /* Color intermedio del borde */
+        }
+        100% {
+            box-shadow: 0 0 0 0.1em #ac3802; /* Color final del borde */
+        }
+    }
+    form h2{
+        font-size: 2em;
+        text-decoration:underline;
+    }
+    
+
+    fieldset {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    label {
+        font-family: 'Courier New', Courier, monospace;
+        color: #ffffff;
+        font-size: larger;
+    }
+
+    input {
+        border-radius: 0.8em;
+        width: 90%;
+        padding: 0.5em;
+        margin-bottom: 1.2em;
+        font-family: mifuente;
+
+
+
+    }
+    select {
+        /* Otros estilos */
+        transition: all 0.3s ease;
+      }
+      
+      select:hover {
+        /* Estilos adicionales al pasar el cursor */
+        background-color: #f8f8f8; /* Cambio de color de fondo al pasar el cursor */
+      }
+
+    .button1 {
+        background-color: #410000; 
+        color: white;
+        border: none;
+        border-radius: 0.3125em; 
+        padding: 0.625em 1.25em; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        box-shadow: 0 0.3125em #fff0f0;
+        font-family: mifuente;
+        margin-top: 1.4em;
+        margin-bottom: 1em;
+        
+      }
+      
+      .button1:hover {
+        box-shadow: 0 0.425em #631f00;
+        transform: translateY(+0.1875em); /* Equivalente a -3px */
+      }
+
+    select {
+        transition: opacity 0.5s ease, height 2s ease 0.7s;
+        width: 80%;
+        text-align: center;
+        border-radius: 0.5em;
+        font-family: 'Courier New', Courier, monospace;
     }
 
 }
