@@ -23,7 +23,6 @@ li {
 @font-face {
     font-family: mifuente1;
     src: url('../fonts/DancingScript-Regular.ttf');
-
 }
 
 @font-face {
@@ -241,7 +240,15 @@ body {
         height: 14vh;
         color: #ffffff;
         padding: 1.2em;
-
+        /*border-top: solid 0.5em #1f0303;*/
+        background: conic-gradient(from 45deg, #1f0303, #000000)
+        /*background: radial-gradient(circle, #ff0000, #0000ff);*/
+        /*
+        #0792ABff;
+--night: #121214ff;
+--caput-mortuum: #5E2E1Fff;
+--bistre: #351C16ff;
+        */
     }
 
     #menu-footer {
@@ -263,21 +270,22 @@ body {
 
     #menu-footer li {
         list-style-type: none;
-
-
     }
 
     #menu-footer a {
-
-        color: rgb(102, 1, 1);
+        color:beige;
         padding: 2%;
         text-decoration: none;
+        font-weight: bold;
     }
 
 
     #menu-footer svg:hover {
         color: #fac43d !important;
+    }
 
+    footer p {
+        margin-top: 0.5em;
     }
 
 
@@ -714,7 +722,7 @@ body {
 
     }
 
-    .section-world4 img:hover{
+    .section-world4 img:hover {
         transform: scale(1.05);
         transition: transform 0.4s ease;
         box-shadow: 0 0 0.5em rgb(255, 255, 255);
