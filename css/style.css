@@ -646,25 +646,22 @@ body {
         border-collapse: collapse;
         font-size: 1.2em;
         text-align: center;
-        background-image: url("../img/fondomenu10.jpg");
+        background-image: url("../img/fondo6.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
-
     }
 
     td {
-        color: #000000;
+        color: beige;
         font-size: 1em;
         padding: 1.5em;
         width: 20vw;
         border: 0.1em solid #9c460d;
-        font-family: mifuente;
+        font-family: mifuente6;
         transition: background-color 0.7s ease;
         font-weight: bolder;
-
-
+        background-color: #000000c3;
     }
 
     tr:hover td {
