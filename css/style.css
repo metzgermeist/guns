@@ -240,15 +240,8 @@ body {
         height: 14vh;
         color: #ffffff;
         padding: 1.2em;
-        /*border-top: solid 0.5em #1f0303;*/
-        background: conic-gradient(from 45deg, #1f0303, #000000)
-        /*background: radial-gradient(circle, #ff0000, #0000ff);*/
-        /*
-        #0792ABff;
---night: #121214ff;
---caput-mortuum: #5E2E1Fff;
---bistre: #351C16ff;
-        */
+        border-top: solid 0.3em #1e1d1d;
+        border-radius: 50% 50% 0 0;
     }
 
     #menu-footer {
@@ -273,7 +266,7 @@ body {
     }
 
     #menu-footer a {
-        color:beige;
+        color: #fac43d;
         padding: 2%;
         text-decoration: none;
         font-weight: bold;
@@ -286,6 +279,7 @@ body {
 
     footer p {
         margin-top: 0.5em;
+        font-weight: bold;
     }
 
 
