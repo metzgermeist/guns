@@ -644,7 +644,7 @@ body {
         border-collapse: collapse;
         font-size: 1.2em;
         text-align: center;
-        background-image: url("../img/fondomenu.jpg");
+        background-image: url("../img/fondomenu10.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -652,58 +652,50 @@ body {
 
     }
 
-    thead {
+    #thead-custom {
         background: linear-gradient(to bottom, black, #9c460d, black);
         font-size: 1.2em;
-        font-family: mifuente3;
-
-    }
-
-    th {
-        color: #fff;
-        font-size: 1.4em;
-        padding: 1em;
-        font-family: mifuente2;
-
+        font-family: mifuente4;
     }
 
     td {
-        color: #ffffff;
+        color: #000000;
         font-size: 1em;
         /* Tamaño de fuente base */
         padding: 1.5em;
         width: 20vw;
-        border: 1px solid #9c460d;
+        border: 0.1em solid #9c460d;
         font-family: mifuente;
         transition: background-color 0.7s ease;
+        font-weight: bolder;
 
 
     }
 
     tr:hover td {
-        background-color: #000000e0;
+        background-color: #000000d7;
         /* Cambia solo el color de fondo */
-        text-shadow: 0 0 1em rgb(219, 219, 219);
+        text-shadow: 0 0 0.4em rgb(255, 255, 255);
     }
-    .section-world3{
+
+    .section-world3 {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding-bottom: 4em;
     }
-    .section-world3 article{
+
+    .section-world3 article {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    
-
     video {
         width: 100%;
-        
+
     }
 
     .section-world4 {
@@ -723,9 +715,16 @@ body {
         font-family: mifuente6;
         color: #ffffff;
         text-align: center;
-        
+
 
     }
+
+    .section-world4 img:hover{
+        transform: scale(1.05);
+        transition: transform 0.4s ease;
+        box-shadow: 0 0 0.5em rgb(255, 255, 255);
+    }
+
 
     .section-world4 img {
         width: 100%;
