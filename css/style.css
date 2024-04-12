@@ -23,7 +23,6 @@ li {
 @font-face {
     font-family: mifuente1;
     src: url('../fonts/DancingScript-Regular.ttf');
-
 }
 
 @font-face {
@@ -241,7 +240,8 @@ body {
         height: 14vh;
         color: #ffffff;
         padding: 1.2em;
-
+        border-top: solid 0.3em #1e1d1d;
+        border-radius: 50% 50% 0 0;
     }
 
     #menu-footer {
@@ -263,21 +263,23 @@ body {
 
     #menu-footer li {
         list-style-type: none;
-
-
     }
 
     #menu-footer a {
-
-        color: rgb(102, 1, 1);
+        color: #fac43d;
         padding: 2%;
         text-decoration: none;
+        font-weight: bold;
     }
 
 
     #menu-footer svg:hover {
         color: #fac43d !important;
+    }
 
+    footer p {
+        margin-top: 0.5em;
+        font-weight: bold;
     }
 
 
@@ -644,25 +646,22 @@ body {
         border-collapse: collapse;
         font-size: 1.2em;
         text-align: center;
-        background-image: url("../img/fondomenu10.jpg");
+        background-image: url("../img/fondo6.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
-
     }
 
     td {
-        color: #000000;
+        color: beige;
         font-size: 1em;
         padding: 1.5em;
         width: 20vw;
         border: 0.1em solid #9c460d;
-        font-family: mifuente;
+        font-family: mifuente6;
         transition: background-color 0.7s ease;
         font-weight: bolder;
-
-
+        background-color: #000000c3;
     }
 
     tr:hover td {
@@ -714,7 +713,7 @@ body {
 
     }
 
-    .section-world4 img:hover{
+    .section-world4 img:hover {
         transform: scale(1.05);
         transition: transform 0.4s ease;
         box-shadow: 0 0 0.5em rgb(255, 255, 255);
