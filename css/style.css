@@ -652,16 +652,9 @@ body {
 
     }
 
-    #thead-custom {
-        background: linear-gradient(to bottom, black, #9c460d, black);
-        font-size: 1.2em;
-        font-family: mifuente4;
-    }
-
     td {
         color: #000000;
         font-size: 1em;
-        /* Tamaño de fuente base */
         padding: 1.5em;
         width: 20vw;
         border: 0.1em solid #9c460d;
@@ -715,6 +708,8 @@ body {
         font-family: mifuente6;
         color: #ffffff;
         text-align: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
 
 
     }
