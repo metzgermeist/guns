@@ -161,6 +161,7 @@ body {
     }
 
     #contenedor-enlaces a {
+        display: block;
         text-decoration: none;
         text-align: center;
         font-weight: bold;
@@ -454,7 +455,6 @@ body {
         justify-content: space-evenly;
         align-items: center;
         background: linear-gradient(to bottom, black, #1f0303, #000000);
-
     }
 
     .articulo1 h2 {
@@ -475,14 +475,16 @@ body {
         transition: transform 0.4s ease;
     }
 
-    .tarjeta {
+    .tarjeta{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 80%;
+    }
 
-
+    .tarjeta a{
+        width: 100%;
     }
 
     .articulo1 p {
@@ -558,11 +560,12 @@ body {
 
 
     .button {
-        background-color: #410000; 
+        background-color: #410000;
+        width: 95% !important;
         color: white;
         border: none;
-        border-radius: 0.3125em; 
-        padding: 0.625em 1.5em; 
+        border-radius: 0.3125em;
+        padding: 0.625em 1.5em;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -571,12 +574,13 @@ body {
         box-shadow: 0 0.3125em #fff0f0;
         font-family: mifuente;
         margin-bottom: 1.5em;
-        
-      }
-      
-      .button:hover {
+    }
+
+    .tarjeta
+
+    .button:hover {
         transform: scale(0.9);
-      }
+    }
 
 
 
@@ -727,7 +731,7 @@ body {
     }
 
     form {
-        width: 97%;
+        width: 95%;
         margin: 0 auto;
         border-radius: 0.8em;
         background: linear-gradient(to bottom right, #690000, #000000);
@@ -736,34 +740,38 @@ body {
         justify-content: center;
         align-items: center;
         padding: 1em;
-        animation: cambiaColor 5s infinite; /* Aplicamos la animación al formulario */
-        box-shadow: 0 0 0 2px #ac3802; /* Establecemos una sombra inicial para simular el borde */
+        animation: cambiaColor 5s infinite;
+        /* Aplicamos la animación al formulario */
+        box-shadow: 0 0 0 2px #ac3802;
+        /* Establecemos una sombra inicial para simular el borde */
     }
-    
+
     @keyframes cambiaColor {
         0% {
-            box-shadow: 0 0 0 0.1em #ac3802; /* Color inicial del borde */
+            box-shadow: 0 0 0 0.1em #ac3802;
+            /* Color inicial del borde */
         }
+
         50% {
-            box-shadow: 0 0 0 0.1em rgb(255, 255, 255); /* Color intermedio del borde */
+            box-shadow: 0 0 0 0.1em rgb(255, 255, 255);
+            /* Color intermedio del borde */
         }
+
         100% {
-            box-shadow: 0 0 0 0.1em #ac3802; /* Color final del borde */
+            box-shadow: 0 0 0 0.1em #ac3802;
+            /* Color final del borde */
         }
     }
-    form h2{
+
+    form h2 {
         font-size: 2em;
-        text-decoration:underline;
     }
-    
+
 
     fieldset {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
     }
 
     label {
@@ -772,27 +780,35 @@ body {
         font-size: larger;
     }
 
-    input {
+    input,
+    select {
         border-radius: 0.8em;
-        width: 95%;
+        width: 100%;
         padding: 0.5em;
         margin-bottom: 1.2em;
         font-family: mifuente;
-
-
-
     }
+
+    #fechavencimiento {
+        width: 50%;
+    }
+
+    #cvv {
+        width: 30%;
+    }
+
     select {
         /* Otros estilos */
         transition: all 0.3s ease;
-      }
-      
-      select:hover {
-        /* Estilos adicionales al pasar el cursor */
-        background-color: #f8f8f8; /* Cambio de color de fondo al pasar el cursor */
-      }
+    }
 
-    .button1 {
+    select:hover {
+        /* Estilos adicionales al pasar el cursor */
+        background-color: #f8f8f8;
+        /* Cambio de color de fondo al pasar el cursor */
+    }
+
+    /*.button1 {
         background-color: #410000; 
         color: white;
         border: none;
@@ -807,17 +823,31 @@ body {
         font-family: mifuente;
         margin-top: 1.4em;
         margin-bottom: 1em;
-        
       }
       
       .button1:hover {
         box-shadow: 0 0.425em #ffffff;
-        transform: translateY(+0.1875em); /* Equivalente a -3px */
-      }
+        transform: translateY(+0.1875em); 
+      }*/
+
+    form .btn, form a{
+        width: 95%;
+        color: black !important;
+        font-weight: bold;
+    }
+
+    
+
+    form .btn-light{
+        background-color: #ee9911 !important;
+    }
+
+
+
 
     select {
         transition: opacity 0.5s ease, height 2s ease 0.7s;
-        width: 80%;
+        width: 60%;
         text-align: center;
         border-radius: 0.5em;
         font-family: 'Courier New', Courier, monospace;
