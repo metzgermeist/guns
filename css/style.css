@@ -556,8 +556,7 @@ body {
         box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
     }
 
-<<<<<<< HEAD
-=======
+
     .button {
         background-color: #410000; 
         color: white;
@@ -580,8 +579,6 @@ body {
       }
 
 
->>>>>>> f4d11de6ef4fd327ecc85b48c7d5ab7d3877d7d9
-    /*----------------CSS WORLD TOUR RESPONSIVE-------------*/
 
     .section-world1 {
         display: flex;
