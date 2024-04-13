@@ -556,31 +556,7 @@ body {
         box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
     }
 
-    /*.animacion {
-        width: 8em;
-        height: 8em;
-        background-image: url('../img/klipartz.com.png');
-        background-size: cover;
-        border-radius: 50%;
-        animation: girar 5s linear infinite;
-        transition: transform 0.1s ease;
-        transform-style: preserve-3d;
-        perspective: 10em; 
-    }
-    
-    @keyframes girar {
-        0% { transform: rotateY(0deg); }
-        100% { transform: rotateY(360deg); }
-    }
-    
-    .animacion:hover {
-        animation-play-state: paused;
-        transform: rotateY(0deg); 
-    }*/
-
-
     /*----------------CSS WORLD TOUR RESPONSIVE-------------*/
-
 
     .section-world1 {
         display: flex;
@@ -709,8 +685,6 @@ body {
         text-align: center;
         padding-top: 2em;
         padding-bottom: 2em;
-
-
     }
 
     .section-world4 img:hover {
