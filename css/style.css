@@ -13,6 +13,7 @@ li {
 
 }
 
+
 /*------------ CSS fuentes---------------------*/
 @font-face {
     font-family: mifuente;
@@ -52,45 +53,8 @@ li {
 }
 
 body {
-    /*background: linear-gradient(to bottom, black, #1f0303, #000000);
-    */
+
     background-color: #000000;
-}
-
-/*------------ CSS HISTORIA---------------------*/
-
-
-.carousel {
-    margin: 2% auto;
-    width: 75% !important;
-}
-
-.d-block {
-    margin: 0 auto;
-    width: 90% !important;
-    height: 80vh !important;
-    border-radius: 2rem;
-}
-
-.carousel-control-prev-icon svg,
-.carousel-control-next-icon svg {
-    fill: red !important;
-    /* Cambia el color a rojo */
-}
-
-
-.carousel-item p {
-    margin: 2% auto;
-    width: 90%;
-    font-size: 1.5rem;
-}
-
-.carousel p {
-    margin: 0.5em;
-    color: antiquewhite;
-    padding: 0.5em;
-    font-size: 1.5em;
-    width: 90%;
 }
 
 /*-------------css responisve------------------*/
@@ -479,7 +443,7 @@ body {
         transition: transform 0.4s ease;
     }
 
-    .tarjeta{
+    .tarjeta {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -487,7 +451,7 @@ body {
         width: 80%;
     }
 
-    .tarjeta a{
+    .tarjeta a {
         width: 100%;
     }
 
@@ -565,6 +529,7 @@ body {
 
     .button {
         background-color: #410000;
+
         width: 95% !important;
         color: white;
         border: none;
@@ -578,177 +543,188 @@ body {
         box-shadow: 0 0.3125em #fff0f0;
         font-family: mifuente;
         margin-bottom: 1.5em;
-    }
 
-    .tarjeta
 
-    .button:hover {
-        transform: scale(0.9);
     }
 
 
+}
 
-    .section-world1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.tarjeta .button:hover {
+    transform: scale(0.9);
+}
 
-    }
 
-    .section-world1 article {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .section-world1 figure {
-        width: 80%;
-    }
+.section-world1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .section-world1 figure img {
-        width: 100%;
-        animation: girar 8s linear infinite;
-        transition: transform 0.1s ease;
-        transform-style: preserve-3d;
-        perspective: 10em;
-    }
+}
 
-    @keyframes girar {
-        0% {
-            transform: rotateY(0deg);
-        }
+.section-world1 article {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-        100% {
-            transform: rotateY(360deg);
-        }
-    }
+.section-world1 figure {
+    width: 80%;
+}
 
-    .section-world1 figure img:hover {
-        animation-play-state: paused;
+.section-world1 figure img {
+    width: 100%;
+    animation: girar 8s linear infinite;
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    perspective: 10em;
+}
+
+@keyframes girar {
+    0% {
         transform: rotateY(0deg);
     }
 
-    .section-world2 {
-        padding-top: 1em;
-        padding-bottom: 4em;
+    100% {
+        transform: rotateY(360deg);
     }
+}
 
-    /*----css tabla---*/
-    .section-world2 article {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 90%;
-        margin: 0 auto;
-    }
+.section-world1 figure img:hover {
+    animation-play-state: paused;
+    transform: rotateY(0deg);
+}
 
-    /* Estilos generales */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 1.2em;
-        text-align: center;
-        background-image: url("../img/fondo6.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+.section-world2 {
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
 
-    td {
-        color: beige;
-        font-size: 1em;
-        padding: 1.5em;
-        width: 20vw;
-        border: 0.1em solid #9c460d;
-        font-family: mifuente6;
-        transition: background-color 0.7s ease;
-        font-weight: bolder;
-        background-color: #000000c3;
-    }
+/*----css tabla---*/
+.section-world2 article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
 
-    tr:hover td {
-        background-color: #000000d7;
-        /* Cambia solo el color de fondo */
-        text-shadow: 0 0 0.4em rgb(255, 255, 255);
-    }
+/* Estilos generales */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    text-align: center;
+    background-image: url("../img/fondo6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    .section-world3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 4em;
-    }
+td {
+    color: beige;
+    font-size: 1em;
+    padding: 1.5em;
+    width: 20vw;
+    border: 0.1em solid #9c460d;
+    font-family: mifuente6;
+    transition: background-color 0.7s ease;
+    font-weight: bolder;
+    background-color: #000000c3;
+}
 
-    .section-world3 article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+tr:hover td {
+    background-color: #000000d7;
+    /* Cambia solo el color de fondo */
+    text-shadow: 0 0 0.4em rgb(255, 255, 255);
+}
 
-    video {
-        width: 100%;
+.section-world3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+}
 
-    }
+.section-world3 article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    .section-world4 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to bottom, rgb(10, 24, 104), rgb(1, 3, 15), black);
+video {
+    width: 100%;
 
-    }
+}
 
-    .section-world4 article {
-        display: inline-block;
-        justify-content: center;
-        width: 80%;
-        text-decoration: none;
-        font-family: mifuente6;
-        color: #ffffff;
-        text-align: center;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
+.section-world4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(10, 24, 104), rgb(1, 3, 15), black);
 
-    .section-world4 img:hover {
-        transform: scale(1.05);
-        transition: transform 0.4s ease;
-        box-shadow: 0 0 0.5em rgb(255, 255, 255);
-    }
+}
+
+.section-world4 article {
+    display: inline-block;
+    justify-content: center;
+    width: 80%;
+    text-decoration: none;
+    font-family: mifuente6;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section-world4 img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+    box-shadow: 0 0 0.5em rgb(255, 255, 255);
+}
 
 
-    .section-world4 img {
-        width: 100%;
-        border-radius: 1em;
-    }
+.section-world4 img {
+    width: 100%;
+    border-radius: 1em;
+}
 
-    /*--------------CSS FORMULARIO---------------*/
-    #main-formulario {
-        padding: 1.5em;
-    }
+/*--------------CSS FORMULARIO---------------*/
+#main-formulario {
+    padding: 1.5em;
+}
 
-    form {
-        width: 95%;
-        margin: 0 auto;
-        border-radius: 0.8em;
-        background: linear-gradient(to bottom right, #690000, #000000);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1em;
+form {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0.8em;
+    background: linear-gradient(to bottom right, #690000, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+
+    animation: cambiaColor3 5s infinite;
+    box-shadow: 0 0 0 2px #ac3802;
+
+}
+
+@keyframes cambiaColor3 {
+    0% {
+        box-shadow: 0 0 0 0.1em #e90000;
         animation: cambiaColor 5s infinite;
-        /* Aplicamos la animación al formulario */
         box-shadow: 0 0 0 2px #ac3802;
-        /* Establecemos una sombra inicial para simular el borde */
     }
+}
 
     @keyframes cambiaColor {
         0% {
@@ -769,6 +745,8 @@ body {
 
     form h2 {
         font-size: 2em;
+        text-decoration: underline;
+
     }
 
 
@@ -801,10 +779,12 @@ body {
         width: 30%;
     }
 
+
     select {
         /* Otros estilos */
         transition: all 0.3s ease;
     }
+
 
     select:hover {
         /* Estilos adicionales al pasar el cursor */
@@ -812,12 +792,21 @@ body {
         /* Cambio de color de fondo al pasar el cursor */
     }
 
-    /*.button1 {
+    .button1 {
+        background-color: #410000;
+
+
+        select:hover {
+            /* Estilos adicionales al pasar el cursor */
+            background-color: #f8f8f8;
+            /* Cambio de color de fondo al pasar el cursor */
+        }
+
+        /*.button1 {
         background-color: #410000; 
-        color: white;
         border: none;
-        border-radius: 0.3125em; 
-        padding: 0.625em 1.25em; 
+        border-radius: 0.3125em;
+        padding: 0.625em 1.25em;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -827,24 +816,34 @@ body {
         font-family: mifuente;
         margin-top: 1.4em;
         margin-bottom: 1em;
-      }
-      
-      .button1:hover {
-        box-shadow: 0 0.425em #ffffff;
-        transform: translateY(+0.1875em); 
-      }*/
 
-    form .btn, form a{
+    }
+
+    .button1:hover {
+        box-shadow: 0 0.425em #ffffff;
+        transform: translateY(+0.1875em);
+         Equivalente a -3px 
+    }*/
+
+
+    .button1:hover {
+        box-shadow: 0 0.425em #ffffff;
+        transform: translateY(+0.1875em);
+    }
+
+    form .btn,
+    form a {
         width: 95%;
         color: black !important;
         font-weight: bold;
     }
 
-    
 
-    form .btn-light{
+
+    form .btn-light {
         background-color: #ee9911 !important;
     }
+
 
 
 
