@@ -1,5 +1,3 @@
-
-</html>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,15 +10,15 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/icono2.png" type="image/x-icon">
-    <title>Gunsn'Roses</title>
+    <title>Discografia</title>
 </head>
 
-<body id="body1">
+<body>
     <header>
         <section id="contenedor-menu">
             <section>
-                <a class="contenedor-menu2" href="#contenedor-menu"><img src="../img/menu3.png" id="abrir"></a>
-                <a class="contenedor-menu2" href="#"><img src="../img/menu3.png" id="cerrar"></a>
+                <a class="contenedor-menu2" href="#contenedor-menu"><img src="img/menu3.png" id="abrir"></a>
+                <a class="contenedor-menu2" href="#"><img src="img/menu3.png" id="cerrar"></a>
                 <img class="contenedor-menu3" src="../img/logo.png" id="abrir">
             </section>
             <nav id="menu-principal">
@@ -29,7 +27,7 @@
                         <a href="../index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="discografia.html">Discografía</a>
+                        <a href="#">Discografía</a>
                     </li>
                     <li>
                         <a href="worldtour.html">World Tour</a> <!-- historias gira y video-->
@@ -41,58 +39,68 @@
             </nav>
         </section>
     </header>
-    <main id="main-formulario">
-        <form action="../php/ejemplo.php" method="post">
-            <h2>Detalles del cliente</h2>
-            <fieldset>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name">
 
-                <label for="Apellido">Apellido:</label>
-                <input type="text" id="Apellido" name="apellido">
+    <main class="main-discografia">
+        <h1>
+            Discografia
+        </h1>
+        <section id="section-disco">
+            <h2>
+                El explosivo debut que definió el hard rock !
+                Escucha: Apetite for destruction y mas!
+            </h2>
 
-                <label for="email">Dirección e-mail:</label>
-                <input type="email" id="email" name="email">
+            <article class="articulo-disco" id="disco1">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/28yHV3Gdg30AiB8h8em1eW?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <label for="email2">Confirme su dirección e-mail:</label>
-                <input type="email" id="email2" name="email2">
+            </article>
+            <article class="articulo-disco" id="disco2">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/6z5LStxyQzrUTrVxjiOXVU?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <label for="Ciudad">Localidad/Ciudad:</label>
-                <select name="Ciudad" id="Ciudad">
-                    <option value="ninguna">- seleccione -</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Alemania">Alemania</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="España">España</option>
-                    <option value="Italia">Italia</option>
-                    <option value="Japon">Japon</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Estados Unidos">Estados Unidos</option>
-                </select>
-            </fieldset>
+            </article>
+            <article class="articulo-disco" id="disco3">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/33HYdYXXadqsdZ1NsYmS6o?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-            <h2>Facturacion</h2>
+            </article>
+            <article class="articulo-disco" id="disco4">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/00eiw4KOJZ7eC3NBEpmH4C?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-            <fieldset>
-                <label for="titular">Nombre del titular:</label>
-                <input type="text" id="titular" name="titular">
+            </article>
+            <article class="articulo-disco" id="disco5">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/4ieR19hRkKeE81CalJPQNu?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <label for="tarjeta">Número de tarjeta:</label>
-                <input type="number" id="tarjeta" name="tarjeta">
+            </article>
+            <article class="articulo-disco" id="disco6">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/0suNLpB9xraAv1FcdlITjQ?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <label for="fechavencimiento">Fecha de caducidad:</label>
-                <input type="date" id="fechavencimiento" name="fechavencimiento" min="1950-01-01" max="2040-12-31">
-
-                <label for="cvv">CCV:</label>
-                <input type="text" id="cvv" name="cvv" maxlength="4">
-            </fieldset>
-
-
-           <input type="submit" class="btn btn-light" value="Confirmar">
-           <a href="merchandising.html" class="btn btn-danger">Cancelar</a>
+            </article>
 
 
-        </form>
+        </section>
     </main>
     <footer>
         <nav id="menu-footer">
@@ -126,7 +134,9 @@
                 </li>
             </ul>
         </nav>
-        <p>Javier Mas ®</p>
+        <p>
+            Javier Mas ®
+        </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
