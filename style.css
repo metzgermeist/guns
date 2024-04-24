@@ -334,7 +334,7 @@ li {
   #sectionTienda article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.1rem;
     align-items: center;
     border: #fcfcfc 0.1em solid;
@@ -399,7 +399,7 @@ li {
     transform: scale(1.2);
     transition: transform 0.4s ease;
   }
-  /****************************************************/
+  /************** puede interesarte******************************/
   .sectionventa {
     display: flex;
     flex-direction: column;
@@ -1052,7 +1052,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: center;
     background: linear-gradient(to bottom, black, #1f0303, #000000);
     padding-top: 4em;
   }
@@ -1061,7 +1061,7 @@ li {
     font-size: 1.3em;
   }
   .articulo1 figure {
-    width: 45%;
+    width: 100%;
   }
   .articulo1 img {
     width: 100%;
@@ -1072,10 +1072,16 @@ li {
   }
   .tarjeta {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .tarjeta2{
+    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width: 80%;
   }
   .tarjeta a {
     width: 100%;
@@ -1138,6 +1144,22 @@ li {
   }
   .button:hover {
     transform: scale(0.9);
+  }
+  .button {
+    background-color: #410000;
+    width: 25% !important;
+    color: white;
+    border: none;
+    border-radius: 0.3125em;
+    padding: 0.625em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    box-shadow: 0 0.3125em #fff0f0;
+    font-family: mifuente;
+    margin-bottom: 1.5em;
   }
   /*--------------------------------------------*/
   /*-----------------css formulario--------------*/
@@ -1209,22 +1231,7 @@ li {
     /* Estilos adicionales al pasar el cursor */
     background-color: #ac3802;
   }
-  .button {
-    background-color: #410000;
-    width: 95% !important;
-    color: white;
-    border: none;
-    border-radius: 0.3125em;
-    padding: 0.625em 1.5em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    box-shadow: 0 0.3125em #fff0f0;
-    font-family: mifuente;
-    margin-bottom: 1.5em;
-  }
+ 
   form .btn,
   form a {
     width: 40%;
