@@ -1,36 +1,19 @@
 @charset "UTF-8";
-.d-flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.d-flex-colum, body {
-  display: flex;
-  flex-direction: column;
-}
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  justify-content: space-evenly;
-}
-@media all and (max-width: 768px) {
-  body {
-    background-color: #000000;
-  }
-}
-@media all and (min-width: 769px) {
-  body {
-    background: linear-gradient(to bottom, black, #2b0000, #000000);
-  }
+a {
+  text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+/*------------ CSS fuentes---------------------*/
 @font-face {
   font-family: mifuente;
   src: url("./fonts/NewRocker-Regular.otf");
@@ -49,7 +32,7 @@ body {
 }
 @font-face {
   font-family: mifuente3;
-  src: url("./fonts/RockBottom.ttf");
+  src: url("./fonts/Rock Bottom.ttf");
 }
 @font-face {
   font-family: mifuente4;
@@ -57,30 +40,19 @@ body {
 }
 @font-face {
   font-family: mifuente5;
-  src: url("./fonts/RockchildCalifornia.ttf");
+  src: url("./fonts/Rockchild California.ttf");
 }
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
+body {
+  background-color: #000000;
 }
 
-.d-flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.d-flex-colum, body {
-  display: flex;
-  flex-direction: column;
-}
-
+/*-------------css responisve------------------*/
+/*------------css inicio-----------------------*/
 @media all and (max-width: 768px) {
-  #contenedor-menu .contenedor-menu3 {
+  .contenedor-menu3 {
     display: none;
   }
+  /*--- CSS PARA TODOS LOS MENUS RESPONISVE----*/
   #contenedor-menu section {
     display: flex;
     flex-direction: row;
@@ -132,6 +104,7 @@ li {
   }
   #contenedor-enlaces a {
     display: block;
+    text-decoration: none;
     text-align: center;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -144,11 +117,10 @@ li {
     /* background: #f4c653;  color amarillo que tenia el anitguo menu*/
     box-shadow: 0 0 12px rgba(167, 167, 167, 0.603);
   }
-}
-/*-------------css responisve------------------*/
-/*------------css inicio-----------------------*/
-@media all and (max-width: 768px) {
   /*--------CSS DEL INICIO RESPOSIVE--------------*/
+  #inicio main {
+    background: linear-gradient(to bottom, black, #1f0303, #000000);
+  }
   #entry {
     display: flex;
     flex-direction: row;
@@ -334,7 +306,7 @@ li {
   #sectionTienda article {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1.1rem;
     align-items: center;
     border: #fcfcfc 0.1em solid;
@@ -356,11 +328,28 @@ li {
     width: 100%;
   }
   /*-------------- css articulos-----------------*/
-  .articulo1 {
+  .section-venta {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+  .section-venta h2 {
+    font-family: mifuente2;
+  }
+  .section-venta a {
+    display: inline-block;
+    width: 85%;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .articulo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
     background: linear-gradient(to bottom, black, #1f0303, #000000);
   }
   .articulo1 h2 {
@@ -368,7 +357,7 @@ li {
     font-size: 1.3em;
   }
   .articulo1 figure {
-    width: 85%;
+    width: 90%;
   }
   .articulo1 img {
     width: 100%;
@@ -377,18 +366,12 @@ li {
     transform: scale(1.2);
     transition: transform 0.4s ease;
   }
-  .tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-  }
-  .tarjeta a {
+  .articulo1 a {
     width: 100%;
   }
   .articulo1 p {
     font-size: 1.1em;
+    padding: 0.5em;
     color: #ffffff;
     font-family: mifuente6;
   }
@@ -399,23 +382,7 @@ li {
     transform: scale(1.2);
     transition: transform 0.4s ease;
   }
-  /************** puede interesarte******************************/
-  .sectionventa {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .sectionventa h2 {
-    font-family: mifuente2;
-  }
-  .sectionventa a {
-    display: inline-block;
-    width: 85%;
-    text-decoration: none;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
+  /****************************************************/
   .articulo2 {
     width: 100%;
     border: #999999 solid 0.1em;
@@ -446,6 +413,7 @@ li {
   .button:hover {
     transform: scale(0.9);
   }
+  /*-------------------------------------------------------------*/
   .section-world1 {
     display: flex;
     flex-direction: column;
@@ -500,7 +468,7 @@ li {
     border-collapse: collapse;
     font-size: 1.2em;
     text-align: center;
-    background-image: url("./img/fondo6.jpg");
+    background-image: url("../img/fondo6.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -671,6 +639,14 @@ li {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, black, #2b0000, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   #contenedor-menu {
     padding: 0.9em;
@@ -914,7 +890,7 @@ li {
     border-collapse: collapse;
     font-size: 1.2em;
     text-align: center;
-    background-image: url("../img/fondomenu13.jpg");
+    background-image: url("./img/fondomenu13.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1052,7 +1028,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
     background: linear-gradient(to bottom, black, #1f0303, #000000);
     padding-top: 4em;
   }
@@ -1061,7 +1037,7 @@ li {
     font-size: 1.3em;
   }
   .articulo1 figure {
-    width: 100%;
+    width: 45%;
   }
   .articulo1 img {
     width: 100%;
@@ -1072,16 +1048,10 @@ li {
   }
   .tarjeta {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .tarjeta2{
-    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    width: 80%;
   }
   .tarjeta a {
     width: 100%;
@@ -1144,22 +1114,6 @@ li {
   }
   .button:hover {
     transform: scale(0.9);
-  }
-  .button {
-    background-color: #410000;
-    width: 25% !important;
-    color: white;
-    border: none;
-    border-radius: 0.3125em;
-    padding: 0.625em 1.5em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    box-shadow: 0 0.3125em #fff0f0;
-    font-family: mifuente;
-    margin-bottom: 1.5em;
   }
   /*--------------------------------------------*/
   /*-----------------css formulario--------------*/
@@ -1231,7 +1185,22 @@ li {
     /* Estilos adicionales al pasar el cursor */
     background-color: #ac3802;
   }
- 
+  .button {
+    background-color: #410000;
+    width: 95% !important;
+    color: white;
+    border: none;
+    border-radius: 0.3125em;
+    padding: 0.625em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    box-shadow: 0 0.3125em #fff0f0;
+    font-family: mifuente;
+    margin-bottom: 1.5em;
+  }
   form .btn,
   form a {
     width: 40%;
