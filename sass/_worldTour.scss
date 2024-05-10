@@ -1,30 +1,28 @@
+.d-flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.d-flex-colum
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-@media all and (max-width: 768px) {
-    #body-world-tour{
-        background: linear-gradient(to bottom, black, #2b0000, #000000);
-    }
+.section-world1 {
+   
+    @extend .d-flex-colum;
 
-    .section-world1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-world1 article {
+    article {
+        @extend .d-flex-row;
         width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
     }
 
-    .section-world1 figure {
-        width: 80%;
-    }
-
-    .section-world1 figure img {
+    figure img {
         width: 100%;
         animation: girar 8s linear infinite;
         transition: transform 0.1s ease;
@@ -32,240 +30,166 @@
         perspective: 10em;
     }
 
+}
 
-    .section-world1 figure img:hover {
-        animation-play-state: paused;
-        transform: rotateY(0deg);
-    }
+.section-world2 {
+    padding-top: 1em;
+    padding-bottom: 4em;
 
-    .section-world2 {
-        padding-top: 1em;
-        padding-bottom: 4em;
-    }
-
-    /*----css tabla---*/
-    .section-world2 article {
+    article {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 90%;
         margin: 0 auto;
     }
+}
 
-    /* Estilos generales */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 1.2em;
-        text-align: center;
-        background-image: url("./img/fondo6.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+table {
+    border-collapse: collapse;
+    font-size: 1.2em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    td {
-        color: beige;
-        font-size: 1em;
-        padding: 1.5em;
-        width: 20vw;
-        border: 0.1em solid #9c460d;
-        font-family: mifuente6;
-        transition: background-color 0.7s ease;
-        font-weight: bolder;
-        background-color: #000000c3;
-    }
 
-    tr:hover td {
-        background-color: #000000d7;
-        /* Cambia solo el color de fondo */
-        text-shadow: 0 0 0.4em rgb(255, 255, 255);
-    }
 
-    .section-world3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 4em;
-    }
+td {
+    color:$color-tabla;
+    font-size: 1em;
+    padding: 1.5em;
+    width: 20vw;
+    border: $borde-tabla;
+    font-family: mifuente6;
+    transition: background-color 0.7s ease;
+    font-weight: bolder;
+    background-color: $color-fondo-tabla;
+}
 
-    .section-world3 article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+tr:hover td {
+    background-color: $hover-td;
+    /* Cambia solo el color de fondo */
+    text-shadow: $hover-shadow;
+}
+
+.section-world3 {
+    @extend .d-flex-row;
+    padding-bottom: 4em;
+
+    article {
+        @extend .d-flex-colum;
     }
 
     video {
         width: 100%;
-
     }
+}
 
-    .section-world4 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to bottom, rgb(10, 24, 104), rgb(1, 3, 15), black);
-    }
 
-    .section-world4 article {
+
+
+.section-world4 {
+    @extend .d-flex-row;
+    background: $fondo-section-world4;
+
+    article {
         display: inline-block;
         justify-content: center;
-        width: 80%;
         text-decoration: none;
         font-family: mifuente6;
-        color: #ffffff;
+        color: $color-texto-wordl4;
         text-align: center;
         padding-top: 2em;
         padding-bottom: 2em;
     }
 
-    .section-world4 img:hover {
+    img {
+        width: 100%;
+        border-radius: 1em;
+    }
+
+    img:hover {
         transform: scale(1.05);
         transition: transform 0.4s ease;
         box-shadow: 0 0 0.5em rgb(255, 255, 255);
     }
 
+   
+}
 
-    .section-world4 img {
-        width: 100%;
-        border-radius: 1em;
+
+@media all and (max-width: 768px) {
+    #body-world-tour{
+        background: $fondo-worldTour-mobile;
     }
+
+    .section-world1 figure {
+        width: 80%;
+    }
+
+
+    /*----css tabla---*/
+    .section-world2 article {
+        width: 90%;
+    }
+
+    
+    /* Estilos generales */
+    table {
+        width: 100%;
+        background-image:$fondo-worldTour-mobile;
+    }
+
+    .section-world4 article {
+        width: 80%; 
+    }
+
 
 }
 
 @media all and (min-width: 769px) {
-    .section-world1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    .section-world1 article {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
+     
     .section-world1 figure {
         width: 40%;
     }
     
-    .section-world1 figure img {
-        width: 100%;
-        animation: girar 8s linear infinite;
-        transition: transform 0.1s ease;
-        transform-style: preserve-3d;
-        perspective: 10em;
-    }
-    
-    .section-world2 {
-        padding-top: 1em;
-        padding-bottom: 4em;
-    }
-    
+
     /*----css tabla---*/
     .section-world2 article {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         width: 100%;
-        margin: 0 auto;
+     
     }
     
     /* Estilos generales */
     table {
         width: 90%;
-        border-collapse: collapse;
-        font-size: 1.2em;
-        text-align: center;
-        background-image: url("./img/fondomenu13.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    
-    td {
-        color: beige;
-        font-size: 1em;
-        padding: 1.5em;
-        width: 20vw;
-        border: 0.1em solid #9c460d;
-        font-family: mifuente6;
-        transition: background-color 0.7s ease;
-        font-weight: bolder;
-        background-color: #0000009d;
+        background-image: $imagen-tabla-desktop;
     }
     
     tr:hover td {
-        background-color: #000000f3;
-        /* Cambia solo el color de fondo */
-        text-shadow: 0 0 0.4em rgb(255, 255, 255);
         text-transform: uppercase;
     }
     
-    .section-world3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 4em;
-    }
     
-    .section-world3 article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     
     video {
-        width: 100%;
         height: 90vh;
         border-radius: 1em;
     
     }
     
     .section-world4 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to bottom, black, rgb(1, 3, 15), rgb(10, 24, 104));
         margin-bottom: 3em;
     
     }
     
     .section-world4 article {
-        display: inline-block;
-        justify-content: center;
         width: 40%;
-        text-decoration: none;
-        font-family: mifuente6;
-        color: #ffffff;
-        text-align: center;
-        padding-top: 2em;
-        padding-bottom: 2em;
     }
     
-    .section-world4 img:hover {
-        transform: scale(1.05);
-        transition: transform 0.4s ease;
-        box-shadow: 0 0 0.5em rgb(255, 255, 255);
-    }
-    
-    .section-world4 img {
-        width: 100%;
-        border-radius: 1em;
-    }
 
 }
 
