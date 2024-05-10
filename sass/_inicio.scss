@@ -1,6 +1,3 @@
-$inicio-color-texto:antiquewhite;
-$inicio-fondo-mobile:linear-gradient(to bottom, black, #1f0303, #000000);
-
 #inicio
 {
     section article {
@@ -35,7 +32,6 @@ $inicio-fondo-mobile:linear-gradient(to bottom, black, #1f0303, #000000);
   
 }
  
-
 @media all and (max-width: 768px) {
     #inicio main {
         background: $inicio-fondo-mobile;
@@ -46,7 +42,7 @@ $inicio-fondo-mobile:linear-gradient(to bottom, black, #1f0303, #000000);
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(to bottom, black, #1f0303, #000000);
+        background: $inicio-fondo-mobile;
         figure {
             width: 80%;
             padding-top: 2em;

@@ -2,71 +2,71 @@
 
 #main-formulario {
     padding: 1.5em;
-}
 
-form {
-    margin: 0 auto;
-    border-radius: 0.8em;
-    background: $fondo_form;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    animation: cambiaColorx 3s infinite;
-    box-shadow:box-form;
-
-    h2 {
-        font-size: 2em;
-        text-decoration: underline;
-    }
-
-    fieldset {
-        width: 95%;
+    form {
+        margin: 0 auto;
+        border-radius: 0.8em;
+        background: $fondo_form;
         display: flex;
         flex-direction: column;
-    }
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        animation: cambiaColorx 3s infinite;
+        box-shadow:box-form;
     
-    label {
-        font-family: 'Courier New', Courier, monospace;
-        color: $color-label;
-        font-size: larger;
-    }
-
-    input, select {
-        border-radius: 0.8em;
-        padding: 0.5em;
-        margin-bottom: 1.2em;
-        font-family: mifuente;
-    }
-
-    .btn, a{
-        color: $color-texto;
-        font-weight: bold;
-    }
-
-    .btn-light {
-        background-color: $fondo-boton;
-    }
-
-    select {
-        transition: opacity 0.5s ease, height 2s ease 0.7s;
-        width: 60%;
-        text-align: center;
-        border-radius: 0.5em;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
+        h2 {
+            font-size: 2em;
+            text-decoration: underline;
+        }
+    
+        fieldset {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-family: 'Courier New', Courier, monospace;
+            color: $color-label;
+            font-size: larger;
+        }
+    
+        input, select {
+            border-radius: 0.8em;
+            padding: 0.5em;
+            margin-bottom: 1.2em;
+            font-family: mifuente;
+        }
+    
+        .btn, a{
+            color: $color-texto;
+            font-weight: bold;
+        }
+    
+        .btn-light {
+            background-color: $fondo-boton;
+        }
+    
+        select {
+            transition: opacity 0.5s ease, height 2s ease 0.7s;
+            width: 60%;
+            text-align: center;
+            border-radius: 0.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    
+        #fechavencimiento {
+            width: 50%;
+        }
+        
+        #cvv {
+            width: 30%;
+        }
+    
+    }    
 }
 
-
-#fechavencimiento {
-    width: 50%;
-}
-
-#cvv {
-    width: 30%;
-}
 
 
 

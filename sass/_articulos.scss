@@ -1,85 +1,129 @@
-.button {
-    background-color: #410000;
-    width: 95% !important;
-    color: white;
-    border: none;
-    border-radius: 0.3125em;
-    padding: 0.625em 1.5em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    box-shadow: 0 0.3125em #fff0f0;
-    font-family: mifuente;
-    margin-bottom: 1.5em;
+.d-flex-colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-@media all and (max-width: 768px) {
-    .section-venta,.section-venta2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .articulo1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        background: linear-gradient(to bottom, black, #1f0303, #000000);
-    }
-    
-    .articulo1 h2 {
+.section-venta{
+    @extend .d-flex-colum;
+}
+
+.section-venta2{
+    @extend .d-flex-colum;
+}
+
+.articulo1 {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
         text-align: center;
         font-size: 1.3em;
     }
-    
-    .articulo1 figure {
-        width: 90%;
-    }
-    
-    .articulo1 img {
-        width: 100%;
-    }
-    
-    .articulo1 img:hover {
+    img:hover {
         transform: scale(1.2);
         transition: transform 0.4s ease;
     }
     
-    .articulo1 a {
-        width: 100%;
+}
+
+.button {
+    display: inline-block;
+    transition-duration: $timepo-transicion;
+    border: none;
+    border-radius: 0.3125em;
+    padding: 0.625em 1.5em;
+    font-family: mifuente;
+    font-size:larger;
+    color: $color-texto;
+    text-align: center;
+    background-color: $color-boton-comprar;
+    box-shadow:$box-shadow-comprar;
+}
+
+.button:hover {
+    transform: scale(0.9);
+    transition-duration: $timepo-transicion;
+    background-color:$color-hover-comprar;
+    color:$color-hover-texto; 
+}
+
+#PRECIO {
+    font-family: mifuente1;
+    font-weight: bold;
+    color:$color-texto-precio;
+}
+
+.section-venta2 h2 {
+    font-family: mifuente2;
+    color: $color-venta2;
+    font-size: 4em;
+}
+
+.contenedor-productos{
+    display: flex;
+}
+
+
+.articulo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: $articulo2-borde;
+    border-radius: 0.5em;
+    padding: 0.8em;
+    width: 100%;
+    background: $fondo-articulo;
+    font-size: 1em;
+    transition: transform 0.4s ease;
+    color:$color-texto;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+.articulo2:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+    box-shadow:$articulo2-hover-shadow;
+}
+
+@media all and (max-width: 768px) {
+   
+    .articulo1 {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        background: $fondo-articulo;
+
+        figure {
+            width: 90%;
+            img {
+                width: 100%;
+            }
+        }
+
+        a {
+            width: 100%;
+        }
+
+        p{
+            font-size: 1.1em;
+            color:$color-texto;
+        }
     }
-    
-    .articulo1 p{
-        font-size: 1.1em;
-        color: #ffffff;
-    }
-    
+
     #texto-articulo {
         font-family: mifuente6;
         padding-left: 0.25em;
         padding-right: 0.25em;
     }
     
-    #PRECIO {
-        font-family: mifuente1;
-    }
-    
-    #PRECIO:hover {
-        transform: scale(1.2);
-        transition: transform 0.4s ease;
-    }
-    
-    .button:hover {
-        transform: scale(0.9);
-    }
-    
+  
     .contenedor-productos{
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -91,77 +135,33 @@
         margin-top: 1em;
         margin-bottom: 1em;
     }
-    
-    .section-venta2 h2 {
-        font-family: mifuente2;
-        font-size: 3.5em;
-    }
-    
-    .articulo2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: #999999 solid 0.1em;
-        border-radius: 0.5em;
-        padding: 0.8em;
-        width: 100%;
-        background: linear-gradient(to bottom, black, #1f0303, #000000);
-        font-size: 1em;
-        transition: transform 0.4s ease;
-        color: white;
-        font-style: italic;
-        text-align: center;
-    }
-    
+
     .articulo2 figure {
         width: 80%;
+        img {
+            width: 100%;
+        }
     }
     
-    .articulo2 img {
-        width: 100%;
-    }
-    
-    .articulo2:hover {
-        transform: scale(1.05);
-        transition: transform 0.4s ease;
-        box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
-    }
+   
+
 }
 
 @media all and (min-width: 769px) {
-    .section-venta{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
+  
     .articulo1 {
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
         padding-top: 4em;
+
+        figure {
+            width: 25%;
+            img {
+                width: 100%;
+            }
+        }
+        
     }
-    
-    .articulo1 h2 {
-        text-align: center;
-        font-size: 1.3em;
-    }
-    
-    .articulo1 figure {
-        width: 25%;
-    }
-    
-    .articulo1 img {
-        width: 100%;
-    }
-    
-    .articulo1 img:hover {
-        transform: scale(1.2);
-        transition: transform 0.4s ease;
-    }
-    
+
     .tarjeta {
         display: flex;
         flex-direction: row;
@@ -170,37 +170,23 @@
     }
     
     .tarjeta-texto{
-        width: 30%;
-    }
-    
-    .tarjeta-texto p {
-        font-size: 1.1em;
-        color: #ffffff;
-        font-family: mifuente6;
-    }
-    
-    
-    .button {
-        width: 40% !important;
-    }
-
-   
-    
-    .button:hover {
-        transform: scale(0.9);
-    }
-    
-    /****************************************************/
-    .section-venta2 {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        margin-bottom: 5%;
+        align-items: center;
+        width: 30%;
+        p {
+            font-size: 1.1em;
+            color:$color-texto;
+            font-family: mifuente6;
+        }
+    }
+
+    .button {
+        width: 75% !important;
     }
     
-    .section-venta2 h2 {
-        font-family: mifuente2;
-        font-size: 4em;
+    .section-venta2 {
+        margin-bottom: 5%;
     }
     
     .contenedor-productos{
@@ -209,42 +195,21 @@
         justify-content: space-evenly;
         margin-top: 1em;
         margin-bottom: 1em;
-    }
-    
-    .contenedor-productos a{
-        width: 30%;
+
+        a{
+            width: 30%;
+        }
     }
     
     .articulo2 {
-        width: 100%;
-        border: #999999 solid 0.1em;
-        border-radius: 0.5em;
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-        padding: 0.8em;
-        background: linear-gradient(to bottom, black, #1f0303, #000000);
-        font-size: 1em;
-        transition: transform 0.4s ease;
-        color: white;
-        font-style: italic;
-        text-align: center;
-    }
-    
-    .articulo2 figure {
-        width: 50%;
-    }
-    
-    .articulo2 img {
-        width: 100%;
-    }
-    
-    .articulo2:hover {
-        transform: scale(1.05);
-        transition: transform 0.4s ease;
-        box-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
-    }
-    
+        figure {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+     
+    }    
 }
 

@@ -1,92 +1,90 @@
 @media all and (max-width: 768px) {
 
-    body{
-        background-color: #000000;
-    }
-
-    #contenedor-menu{
-        background-color: #000000;
-    }
-
     .contenedor-menu3 {
         display: none;
     }
 
-    /*--- CSS PARA TODOS LOS MENUS RESPONISVE----*/
-    #contenedor-menu section {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding: 1em;
+    #contenedor-menu{
+        background-color: #000000;
+
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 1em;
+        }
+
+        img {
+            width: 12vw;
+        }
+
+        #cerrar {
+            display: none;
+        }
+
+        #contenedor-enlaces {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease, height 1s ease 0.7s;
+        }
+    
     }
 
-    #contenedor-menu img {
-        width: 12vw;
-    }
+    #contenedor-menu:target
+    {
+        #abrir {
+            display: none;
+        }
 
-    #contenedor-menu #cerrar {
-        display: none;
-    }
+        #cerrar {
+            display: block;
+        }
 
-    #contenedor-menu #contenedor-enlaces {
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        transition: opacity 0.5s ease, height 1s ease 0.7s;
-    }
-
-    #contenedor-menu:target #abrir {
-        display: none;
-    }
-
-    #contenedor-menu:target #cerrar {
-        display: block;
-    }
-
-    #contenedor-menu:target #contenedor-enlaces {
-        opacity: 1;
-        height: 80vh;
-        transition: opacity 0.2s ease, height 1s ease;
-    }
+        #contenedor-enlaces {
+            opacity: 1;
+            height: 80vh;
+            transition: opacity 0.2s ease, height 1s ease;
+        }
+    } 
 
     #contenedor-enlaces {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-image: url('./img/fondomenu2.jpg');
+        background-image: $fondo-menu;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         padding: 0;
         margin: 0;
+
+        li {
+            border-radius: 0.5em;
+            border: 0.2em rgb(158, 157, 157) solid;
+            transition: background-color 0.5s;
+            width: 90%;
+            padding: 1rem;
+            text-align: center;
+
+            a {
+                display: block;
+                text-align: center;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                padding: 4%;
+                font-size: 1.3rem;
+                font-family: mifuente;
+            }
+        }
+
+        li:hover {
+            background: #000000dc;
+            box-shadow: 0 0 12px rgba(167, 167, 167, 0.603);
+        }
     }
 
-    #contenedor-enlaces li {
-        border-radius: 0.5em;
-        border: 0.2em rgb(158, 157, 157) solid;
-        transition: background-color 0.5s;
-        width: 90%;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    #contenedor-enlaces a {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        padding: 4%;
-        font-size: 1.3rem;
-        font-family: mifuente;
-    }
-
-    #contenedor-enlaces li:hover {
-        background: #000000dc;
-        /* background: #f4c653;  color amarillo que tenia el anitguo menu*/
-        box-shadow: 0 0 12px rgba(167, 167, 167, 0.603);
-    }
 }
 
 @media all and (min-width: 769px) {
@@ -117,12 +115,11 @@
         width: 6em;
         transition: 0.5s ease;
         margin-top: 0.5em;
+        img {
+            width: 100%;
+        }
     }
 
-
-    .contenedor-menu3 img {
-        width: 100%;
-    }
 
     #menu-principal {
         width: 100%;
@@ -133,27 +130,27 @@
         display: flex;
         flex-direction: row;
         justify-content:space-evenly;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-family: mifuente;
+            transition: 0.3s ease;
+            padding: 0.2em 0.5em 0.2em 0.5em;
+            border: white solid 0.1em;
+            border-radius: 0.5em;
+            text-align: center;
+            background-color: #000000;
+        }
+
+        a:hover {
+            background-color: #8f0000;
+            transform: scale(1.05);
+        }
     }
 
     
-    #contenedor-enlaces li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.5em;
-        font-family: mifuente;
-        transition: 0.3s ease;
-        padding: 0.2em 0.5em 0.2em 0.5em;
-        border: white solid 0.1em;
-        border-radius: 0.5em;
-        text-align: center;
-        background-color: #000000;
-    }
-
-    #contenedor-enlaces a:hover {
-        background-color: #8f0000;
-        transform: scale(1.05);
-    }
-
     #contenedor-menu:hover {
         top: 0;
     }
@@ -173,26 +170,21 @@
         align-items: center;
         height: auto;
         width: 100%;
-        /*background: linear-gradient(to bottom, black, #1f0303, #000000);*/
+       
+        figure {
+            width: 100%;
+            padding-top: 6em;
+            padding-bottom: 4em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 60%;
+            }
+        }
 
     }
-
-    #entry figure {
-        width: 100%;
-        padding-top: 6em;
-        padding-bottom: 4em;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    #entry img {
-        width: 60%;
-    }
-
-
 }
 
 @media all and (min-width: 1280px) {
@@ -202,11 +194,10 @@
         display: flex;
         flex-direction: row;
         justify-content:flex-end;
-    }
 
-    #contenedor-enlaces li{
-        margin-left: 2%;
-        margin-right: 2%;
+        li{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
     }
-
 }

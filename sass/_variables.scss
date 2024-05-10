@@ -7,21 +7,13 @@ $fuente_RockBottom_ttf: url('./fonts/RockBottom.ttf');
 $fuente_RockAwayDemoRegular_ttf: url('./fonts/RockAwayDemoRegular.ttf');
 $fuente_RockchildCalifornia_ttf: url('./fonts/RockchildCalifornia.ttf');
 
-/*-----Formularios -----*/
-$fondo_form:linear-gradient(to bottom right, #690000, #000000);
-$box-form:  0 0 0 2px #ac3802;
-$color-label:#ffffff;
-$color-texto: black !important;
-$fondo-boton : #ee9911 !important;
-
+/*-----Header -----*/
+$fondo-menu:url('./img/fondomenu2.jpg');
 /*----------------------*/
 
-/*----- Footer -----*/
-$footer-hover:#ed3468 !important;
-$footer-enlaces: #fac43d;
-$footer-texto:#ffffff;
-$footer-borde:solid 0.3em #1e1d1d;
-$footer-borde-radio:50% 50% 0 0;
+/*-----Inicio -----*/
+$inicio-color-texto:antiquewhite;
+$inicio-fondo-mobile:linear-gradient(to bottom, black, #1f0303, #000000);
 /*----------------------*/
 
 /*---------- Discografía ------------*/
@@ -54,3 +46,39 @@ $borde-articulo :  #fcfcfc 0.1em solid;
 $hover-shadow-articulo:  0 0 10px rgba(255, 215, 215, 0.87);
 $color-enlace-remera:#ffffff;
 /*----------------------*/
+
+/*---------- Articukos ------------*/
+$fondo-articulo:linear-gradient(to bottom, black, #1f0303, #000000);
+$articulo2-hover-shadow: 0 0 10px rgba(255, 215, 215, 0.87);
+$articulo2-borde: #999999 solid 0.1em;
+$color-texto: #ffffff;
+$color-boton-comprar:#ed3468;
+$color-hover-comprar: #34eda0;
+$color-hover-texto: black;
+$box-shadow-comprar: 0 0.3125em #fff0f0;
+$color-texto-precio: whitesmoke;
+$color-venta2:antiquewhite;
+$timepo-transicion: 0.4s;
+/*----------------------*/
+
+/*-----Formularios -----*/
+$fondo_form:linear-gradient(to bottom right, #690000, #000000);
+$box-form:  0 0 0 2px #ac3802;
+$color-label:#ffffff;
+$color-texto: black !important;
+$fondo-boton : #ee9911 !important;
+
+/*----------------------*/
+
+/*----- Footer -----*/
+$footer-hover:#ed3468 !important;
+$footer-enlaces: #fac43d;
+$footer-texto:#ffffff;
+$footer-borde:solid 0.3em #1e1d1d;
+$footer-borde-radio:50% 50% 0 0;
+/*----------------------*/
+
+
+
+
+
