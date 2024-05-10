@@ -825,7 +825,7 @@ li {
     border-collapse: collapse;
     font-size: 1.2em;
     text-align: center;
-    background-image: url("../img/fondo6.jpg");
+    background-image: url("./img/fondo6.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
