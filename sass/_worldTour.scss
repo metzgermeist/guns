@@ -1,3 +1,5 @@
+
+
 @media all and (max-width: 768px) {
     #body-world-tour{
         background: linear-gradient(to bottom, black, #2b0000, #000000);
@@ -30,9 +32,6 @@
         perspective: 10em;
     }
 
-
-
- 
 
     .section-world1 figure img:hover {
         animation-play-state: paused;
@@ -167,18 +166,6 @@
         perspective: 10em;
     }
     
-    @keyframes girar {
-        0% {
-            transform: rotateY(0deg);
-        }
-    
-        100% {
-            transform: rotateY(360deg);
-        }
-    }
-    
-    
-    
     .section-world2 {
         padding-top: 1em;
         padding-bottom: 4em;
@@ -274,7 +261,6 @@
         transition: transform 0.4s ease;
         box-shadow: 0 0 0.5em rgb(255, 255, 255);
     }
-    
     
     .section-world4 img {
         width: 100%;

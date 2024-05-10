@@ -1,3 +1,4 @@
+/*-----------Fuentes-------------*/
 $fuente_NewRocker_otf: url('./fonts/NewRocker-Regular.otf');
 $fuente_DancingScript_ttf: url('./fonts/DancingScript-Regular.ttf');
 $fuente_DancingScriptBold_ttf: url('./fonts/DancingScript-Bold.ttf');
@@ -5,3 +6,29 @@ $fuente_RemachineScript_ttf: url('./fonts/RemachineScript_Personal_Use.ttf');
 $fuente_RockBottom_ttf: url('./fonts/RockBottom.ttf');
 $fuente_RockAwayDemoRegular_ttf: url('./fonts/RockAwayDemoRegular.ttf');
 $fuente_RockchildCalifornia_ttf: url('./fonts/RockchildCalifornia.ttf');
+
+/*-----Formularios -----*/
+$fondo_form:linear-gradient(to bottom right, #690000, #000000);
+$box-form:  0 0 0 2px #ac3802;
+$color-label:#ffffff;
+$color-texto: black !important;
+$fondo-boton : #ee9911 !important;
+
+/*----------------------*/
+
+/*----- Footer -----*/
+$footer-hover:#ed3468 !important;
+$footer-enlaces: #fac43d;
+$footer-texto:#ffffff;
+$footer-borde:solid 0.3em #1e1d1d;
+$footer-borde-radio:50% 50% 0 0;
+/*----------------------*/
+
+/*---------- Discografía ------------*/
+$imagenes: 'apetite.jpg', 'lies.webp', 'use2.jpg', 'fondo2.webp', 'spagheti.webp', 'chinase.webp';
+$fondo-discos:linear-gradient(to bottom, black, #1f0303, #000000);
+$h2-color: aliceblue;
+$borde-disco: solid rgb(255, 255, 255) 0.15em;
+$titulo-discografia:cambiaColor 3s infinite;
+$titulo-shadow: 0 0 10px rgb(219, 219, 219);
+/*----------------------*/

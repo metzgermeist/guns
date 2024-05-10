@@ -1,24 +1,27 @@
-@media all and (max-width: 768px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 14vh;
-        color: #ffffff;
-        padding: 1.2em;
-        border-top: solid 0.3em #1e1d1d;
-        border-radius: 50% 50% 0 0;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+    color: $footer-texto;
+    padding: 1.2em;
+    border-top: $footer-borde;
+    border-radius: $footer-borde-radio;
+    
+    p {
+        margin-top: 0.5em;
+        font-weight: bold;
     }
+}
 
-    #menu-footer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+#menu-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    #menu-footer ul {
+    ul {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -28,80 +31,18 @@
         margin: 0% !important;
     }
 
-
-    #menu-footer a {
-        color: #fac43d;
+    a {
+        color:$footer-enlaces;
         padding: 2%;
         font-weight: bold;
     }
-
-
-    #menu-footer svg:hover {
-        color: #fac43d !important;
-    }
-
-    footer p {
-        margin-top: 0.5em;
-        font-weight: bold;
-    }
-
 }
 
-@media all and (min-width: 769px) {
 
-
-
-   
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 14vh;
-        color: #ffffff;
-        padding: 1.2em;
-        border-top: solid 0.3em #1e1d1d;
-        border-radius: 50% 50% 0 0;
-
-    }
-
-    #menu-footer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #menu-footer ul {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0% !important;
-        margin: 0% !important;
-    }
-
-    #menu-footer li {
-        list-style-type: none;
-    }
-
-    #menu-footer a {
-        color: #fac43d;
-        padding: 2%;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-
-    #menu-footer svg:hover {
-        color: #fac43d !important;
-    }
-
-    footer p {
-        margin-top: 0.5em;
-        font-weight: bold;
-    }
-
+#menu-footer svg:hover {
+    color: $footer-hover
 }
+
+
+
+

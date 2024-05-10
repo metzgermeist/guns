@@ -1,3 +1,17 @@
+@keyframes cambiaColor {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+
+    50% {
+        color: #f70202;
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
 @keyframes cambiaColor2 {
     0% {
         color: rgb(255, 255, 255);
@@ -38,3 +52,5 @@
         /* Color final del borde */
     }
 }
+
+
