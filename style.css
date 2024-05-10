@@ -496,7 +496,7 @@ body #mainTienda #sectionTienda .enlaceRemera {
   padding: 0.625em 1.5em;
   font-family: mifuente;
   font-size: larger;
-  color: black !important;
+  color: #ffffff;
   text-align: center;
   background-color: #ed3468;
   box-shadow: 0 0.3125em #fff0f0;
@@ -537,7 +537,7 @@ body #mainTienda #sectionTienda .enlaceRemera {
   background: linear-gradient(to bottom, black, #1f0303, #000000);
   font-size: 1em;
   transition: transform 0.4s ease;
-  color: black !important;
+  color: #ffffff;
   font-style: italic;
   text-align: center;
 }
@@ -566,7 +566,10 @@ body #mainTienda #sectionTienda .enlaceRemera {
   }
   .articulo1 p {
     font-size: 1.1em;
-    color: black !important;
+    color: #ffffff;
+  }
+  .articulo1 #PRECIO {
+    text-align: center;
   }
   #texto-articulo {
     font-family: mifuente6;
@@ -616,7 +619,7 @@ body #mainTienda #sectionTienda .enlaceRemera {
   }
   .tarjeta-texto p {
     font-size: 1.1em;
-    color: black !important;
+    color: #ffffff;
     font-family: mifuente6;
   }
   .button {
