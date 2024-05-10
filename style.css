@@ -753,7 +753,7 @@ body #mainTienda #sectionTienda .enlaceRemera {
   /* Estilos generales */
   table {
     width: 100%;
-    background-image: linear-gradient(to bottom, black, #2b0000, #000000);
+    background-image: url("./img/fondo6.jpg");
   }
   .section-world4 article {
     width: 80%;
