@@ -1,0 +1,170 @@
+
+
+@media all and (max-width: 768px) {
+    #section-disco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, black, #1f0303, #000000);
+    }
+
+    @keyframes cambiaColor {
+        0% {
+            color: rgb(255, 255, 255);
+        }
+
+        50% {
+            color: #f70202;
+        }
+
+        100% {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    h1 {
+        animation: cambiaColor 5s infinite;
+        text-shadow: 0 0 10px rgb(219, 219, 219);
+        font-family: mifuente;
+        padding: 0.8rem;
+        font-size: 2rem;
+    }
+
+    h2 {
+        color: aliceblue;
+        font-family: mifuente;
+        padding: 0.8rem;
+    }
+
+    .articulo-disco {
+        width: 90%;
+        padding: 1.5em;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 1em;
+        border: solid rgb(255, 255, 255) 0.15em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    #disco1 {
+        background-image: url('./img/apetite.jpg');
+
+    }
+
+    #disco2 {
+        background-image: url('./img/lies.webp');
+
+    }
+
+    #disco3 {
+        background-image: url('./img/use2.avif');
+    }
+
+    #disco4 {
+
+        background-image: url('./img/fondo2.webp');
+    }
+
+    #disco5 {
+        background-image: url('./img/spagheti.webp');
+    }
+
+    #disco6 {
+        background-image: url('./img/chinase.webp');
+    }
+
+}
+
+@media all and (min-width: 769px) {
+    #section-disco {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding-top: 1em;
+        padding-top: 1em;
+    }
+    
+    @keyframes cambiaColor {
+        0% {
+            color: rgb(255, 255, 255);
+        }
+    
+        50% {
+            color: #f70202;
+        }
+    
+        100% {
+            color: rgb(255, 255, 255);
+        }
+    }
+    
+    h1 {
+        animation: cambiaColor 3s infinite;
+        text-shadow: 0 0 10px rgb(219, 219, 219);
+        font-family: mifuente;
+        padding: 0.8rem;
+        font-size: 3rem;
+    }
+    
+    h2 {
+        color: aliceblue;
+        font-family: mifuente;
+        padding: 0.8rem;
+    
+    }
+    
+    .articulo-disco {
+        width: 42%;
+        padding: 1.5em;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 1em;
+        border: solid rgb(255, 255, 255) 0.15em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    
+    
+    #disco1 {
+        background-image: url('img/apetite.jpg');
+    
+    }
+    
+    #disco2 {
+        background-image: url('img/lies.webp');
+    
+    }
+    
+    #disco3 {
+        background-image: url('img/use2.jpg');
+    }
+    
+    #disco4 {
+    
+        background-image: url('img/fondo2.webp');
+    }
+    
+    #disco5 {
+        background-image: url('img/spagheti.webp');
+    }
+    
+    #disco6 {
+        background-image: url('img/chinase.webp');
+    }
+    
+}
+
+
+
+/*----------------fin discografia------------------*/

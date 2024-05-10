@@ -1,0 +1,40 @@
+@keyframes cambiaColor2 {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+
+    50% {
+        color: #5a58da
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes girar {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes cambiaColorx {
+    0% {
+        box-shadow: 0 0 0 0.1em #ac3802;
+        /* Color inicial del borde */
+    }
+
+    50% {
+        box-shadow: 0 0 0 0.1em rgb(207, 0, 0);
+        /* Color intermedio del borde */
+    }
+
+    100% {
+        box-shadow: 0 0 0 0.1em #ac3802;
+        /* Color final del borde */
+    }
+}

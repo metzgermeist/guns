@@ -1,0 +1,103 @@
+@media all and (max-width: 768px) {
+    #inicio main {
+        background: linear-gradient(to bottom, black, #1f0303, #000000);
+    }
+
+    #entry {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, black, #1f0303, #000000);
+    }
+
+    #entry figure {
+        width: 80%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    #entry img {
+        width: 100%;
+    }
+
+    #inicio main article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #inicio main article figure {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #inicio main article figure img {
+        width: 95%;
+        border-radius: 0.5em;
+    }
+
+    #inicio p {
+        margin: 0 auto;
+        color: antiquewhite;
+        padding: 0.5em;
+        font-size: 1.3rem;
+        width: 90%;
+        font-family: mifuente;
+    }
+}
+
+@media all and (min-width: 769px) {
+    
+    /*------------------------*/
+    .articulo-gral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    #articulo-inicio1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+
+    #articulo-inicio2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+
+    #inicio main article figure {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #inicio main article figure img {
+        width: 90%;
+        border-radius: 0.5em;
+    }
+
+    #inicio p {
+        margin: 0 auto;
+        color: antiquewhite;
+        padding: 0.5em;
+        font-size: 1.3rem;
+        width: 90%;
+        font-family: mifuente;
+    }
+}
